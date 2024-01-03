@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Green Heart Organics Company that makes vermi compost ">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="author" content="amarjyoti">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+  <title>Green Heart Organics gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+             @media(prefers-color-scheme:dark) {
+                body{background-color: black;}
+                
+            } @media(prefers-color-scheme:light) {
+                body{background-color:white;}
+                
+            }
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-color: black;
+                font-family: sans-serif, Helvetica, arial;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+            }
+            header{ 
+            
+                 background:black;
+                 display: flex;
+            align-items:center;
+            
+            }
+            header ul{
+              padding: 0;
+                list-style:none;
+                 display: flex;
+                 
+            }
+            #text  {
+                
+                color:white;
+                margin: 0 auto;
+                
+            }
+            
+            a{
+               color:white;
+                text-decoration:none;
+                padding:0 10px;
+           
+            }
+            a:hover{
+                color:black;
+                background:green;
+                border-radius: 5px;
+    
+            }
+            #main{
+            display: flex;
+            min-height: 15vh;
+          }
+          @media only screen and (max-width:830px){
+            #main{
+              
+                flex-direction:column;
+            
+            }
+            article{ 
+                order: 1;
+                 width:100%;
+              
+               
+            }
+            #imgbox{
+              flex-direction: column;
+            }
+            
+                aside{
+               order: 2;
+               width:100%
+                
+               
+                }
+               #other li{
+                
+                list-style-type:square;
+                  
+                
+                }
+            }
+        
+          aside{
+           min-width: 25%;
+            background:linear-gradient(to right,darkgreen,yellowgreen,green) ;
+          
+          }
+          aside #box{
+            position: sticky;
+        top: 0px;
+          }
+          aside  #one li{
+            text-align: left;
+            list-style:none;
+            padding:10px;
+         
+          }
+         #other li{
+          color: white;
+          padding:10px;
+          
+         }
+          article{
+            width:100%;
+           padding:0 10px;
+          background: rgb(70, 54, 54);
+         
+          
+        }
+
+       #imgbox{
+        display: flex;
+       
+          flex-wrap: wrap;
+          justify-content:space-around;
+       }
+       .allimg{
+        margin: 15px;
+      background: black;
+       border: 1px solid black;
+       box-shadow: 5px 5px 7px white;
+       flex-basis: 32%;
+       max-width: 500px;
+       padding :10px;
+       display: flex;
+       flex-direction: column;
+       }
+       .allimg img{
+        width:100%;
+        aspect-ratio:1/1;
+        object-fit: cover;
+        transform:scale(1);
+        transition: transform 10s;
+       }
+   
+       h3,p{
+        color: white;
+       }
+          footer{
+            padding: 10px;
+            text-align: end;
+            color: aliceblue;
+            background-color:black;
+          }
+          footer:hover{
+            color:green;
+           
+          }
+    </style>
+</head>
+<body>
+    <header>
+            
+        <nav id="social-links">
+        <ul > <li><a href="mailto:grenheartorganics@gmail.com?cc=shivryat@gmail.com&subject=i have a query&body=hi shiv"><i class="fa-regular fa-envelope"></i></a>
+            </li>
+        
+             <li>
+                <a href="https://www.instagram.com/green_heart_organics?igsh=MW83dG5jdDVxdDdieg=="><i class="fa-brands fa-square-instagram"></i></a>
+           </li></ul></nav>
+           <div id="text">
+           <h1> Gallery</h1>
+           </div>
+           <nav id="goback"><a href="index.html" target="_blank">Back to home</a></nav>
+        </header>
+           <div id="main"><aside>
+            <div id="box"><ul id="one"><li><a href="index.html" target="_blank"><i class="fa-solid fa-house"> </i>&nbsp;Home</a></li>
+              <li><a href="about us.html" target="_blank"><i class="fa-solid fa-address-card"></i>&nbsp;About us</a></li>
+              
+              <li><a href="contact us.html" target="_blank"><i class="fa-solid fa-phone-flip"></i>&nbsp;Contact us</a></li>
+            </ul>
+             <ul id="other"> 
+              <h3>Other Links</h3>
+              <li><a href="#one"> Vermi Compost</a></li>
+              <li><a href="#two">Red Wiggler Worms</a></li>
+              <li><a href="#three"> Vermi Beds</a></li>
+              <li><a href="#Four">In Process Compost</a></li>
+              <li><a href="#five">Watering Vermi Beds</a></li>
+              <li><a href="#six">Sunlight View</a></li>
+              <li><a href="#seven">Mid Process</a></li>
+              <li><a href="#eight">Vermi Beds Alignment</a></li>
+              <li><a href="#nine">Normal Day view</a></li>
+              <li><a href="#ten">Sunrise View</a></li></ul>
+         </div>
+           </aside>
+           <article>
+           <div id="article"><p>
+            <h3>Here is some visual representation of our company.This visual representation also represents,how the vermicompost is formed and  the process of Vermicomposting.</h3>
+           </p>
+         <div id="imgbox">
+
+           <div class="allimg"> <a name="two"></a>
+            <div id="img1"><img src="img1.jpg" alt=""></div>
+            
+           <div> <h3>Red Wiggler Worms</h3></div>
+           <div> <p>Red wigglers, or Eisenia foetida, are the best compost worms. Unlike your everyday night crawlers, they live well in close, highly populated conditions and don't burrow. </p>
+          </div>
+        </div>
+           <div class="allimg"> <a name="three"></a>
+            <div id="img2"><img src="img2.jpg" alt=""> </div>
+            <div><h3> Vermi Beds</h3></div>
+           <div> <p> Vermi beds represents the future in modern compost technology. Vermi Beds are a smart choice for organic agricultural farmers to get higher quality crop yields.
+
+           </p></div>
+           </div>
+            <div class="allimg"><a name="five"></a>
+              <div id="img3"> <img src="img3.jpg" alt=""></div>
+             <div><h3>Watering Vermi Beds</h3></div>
+                <div><p>The beds are maintained at about 40 - 50% moisture content and a temperature of 20 - 30o C by sprinkling water over the beds. </p></div>
+                </div>
+            <div class="allimg"><a name="eight"></a>
+              <div id="img4"> <img src="img4.jpg" alt=""></div>
+               <div><h3>Vermi Beds Alignment </h3></div>
+                <div><p>Normally the beds are 75 cm - 90 cm thick depending on the provision of filter for drainage of excess water. The entire bed area could be above the ground. </p></div>
+                </div>
+           <div class="allimg"> <a name="six"></a>
+             <div id="img5"> <img src="img5.jpg" alt=""></div>
+             <div><h3>Sunlight View</h3></div>
+            <div><p>Protect the worms from sun rays as much as possible.</p></div>
+           </div>
+            <div class="allimg"> <a name="four"></a>
+              <div id="img6"><img src="img6.jpg" alt="">  </div>
+              <div><h3>In Process Compost</h3></div>
+                <div><p>When the color of waste started turning,we can say our compost is in process.</p></div>
+               </div>
+           <div class="allimg"><a name="one"></a>
+             <div id="img7"> <img src="img7.jpg" alt=""> </div>
+            <div><h3>Vermi Compost</h3></div>
+
+           <div> <p>Vermicompost is the product of the decomposition process using various species of worms, usually red wigglers, white worms, and other earthworms.</p></div>
+           </div>
+           <div class="allimg">  <a name="nine"></a>
+             <div id="img8"><img src="img8.jpg" alt=""> </div>
+             <div><h3>Normal Day view</h3></div>
+            <div><p>We can use the space between beds for grewing vegetables and fruits.</p></div>
+          </div>
+           <div class="allimg"><a name="ten"></a>
+             <div id="img9"> <img src="img9.jpg" alt=""></div>
+            <div> <h3>Sunrise View</h3></div>
+            <div><p>Timely water the beds to maintain the moisture of Beds.</p></div>
+            </div>
+            <div class="allimg"><a name="seven"></a>
+              <div id="img10"> <img src="img10.jpg" alt=""></div>
+               <div><h3>Mid Process</h3></div>
+                <div><p>Mid process is when the half waste is turned into vermi compost. </p></div>
+                </div>
+        </div>
+           </article></div>
+           <footer> &copy;greenheartorganics 2023</footer>
+</body></html>
