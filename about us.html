@@ -65,6 +65,11 @@
              min-height: 85vh;
           }
           @media only screen and (max-width:830px){
+           
+            #text {
+              margin: auto;
+              display: inline;
+            }
             #main{
               
                 flex-direction:column;
@@ -74,11 +79,14 @@
                 display:flex;
                 width:100%
                
-            }aside img{
-                width:60%;
+            }aside #box1{
+                width:100%;
                 height: 100%;
                 object-fit: cover;
                 
+                }
+                aside #box2{
+                  display: none;
                 }
             article{ 
                  width:100%;
@@ -146,16 +154,16 @@
         
            <div id="main">
             <aside>
-              <img src="shiv1.jpg" />
+             <div id="box1"> <img src="shiv1.jpg" /></div>
                 
-                <ul>
+               <div id="box2"> <ul>
                        
-                    <li><a href="index.html" target="_blank"><i class="fa-solid fa-house"> </i>&nbsp;home</a></li>
-                   
-                    <li><a href="gallary.html" target="_blank"><i class="fa-solid fa-photo-film"></i>&nbsp;gallery</a></li>
-                    <li><a href="contact us.html" target="_blank"><i class="fa-solid fa-phone-flip"></i>&nbsp;contact us</a></li>
-                    
-                </ul>
+                <li><a href="index.html" target="_blank"><i class="fa-solid fa-house"> </i>&nbsp;home</a></li>
+               
+                <li><a href="gallary.html" target="_blank"><i class="fa-solid fa-photo-film"></i>&nbsp;gallery</a></li>
+                <li><a href="contact us.html" target="_blank"><i class="fa-solid fa-phone-flip"></i>&nbsp;contact us</a></li>
+                
+            </ul></div>
 
             </aside>
             <article>
