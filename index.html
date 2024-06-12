@@ -1,250 +1,807 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Green Heart Organics Company that makes vermi compost ">
-        <meta name="keywords" content="HTML,CSS">
-        <meta name="author" content="amarjyoti">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" >
-        <title>Green Heart Organics</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <style>
-            
-             @media(prefers-color-scheme:dark) {
-                body{background-color: black;}
-                
-            } @media(prefers-color-scheme:light) {
-                body{background-color:white;}
-                
-            }
-           
-           *{
-                box-sizing:border-box;
-            }
-                
-            
-            body{
-                background-color: black;
-                font-family: Arial, Helvetica, sans-serif;
-                margin:0;
-                padding: 0;
-                background-attachment: fixed;
 
-            }
-            #wrapper{
-                border: 1px solid black;
-                width: 100%;
-                
-                margin: 0 auto;
-                text-align: center;
-                text-transform: capitalize;
-                min-height: 500px;
-               
-               
-               
-            }
-            #header{ 
-             height:180px;
-           
-         }
-       
-    
-                
-            
-            #menu{
-                background:rgb(5, 120, 20) ;
-                margin: 0;
-                text-align:left;
-            }
-            #menu ul{
-                margin: 0;
-                padding: 0;
-             }
-            #menu li{
-                display: inline-block;
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Green Heart Organics Company that makes vermi compost ">
+    <meta name="author" content="amarjyoti">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Green Heart Organics</title>
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
 
-            }
-            #menu li a{
-                display: block;
-                padding: 10px 13px;
-                text-decoration:none;
-                color: black;
+<body>
 
-            }
-            #menu li a:hover{
-                background:rgb(16, 17, 16);
-                color:white;
+    <div id="wrapper">
+        <header>
+            <div class="header header-sticky">
+                <div class="container-fluid">
+                    <div class="header-main">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-5">
+                                <div class="logo">
+                                    <a href="/">
+                                        <img class="img-logo" src="./assets/images/greenheartlogo.png" alt="logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-9 d-none d-xl-block">
+                                <div class="main-menu">
+                                    <nav class="mobile-menu">
+                                        <ul>
+                                            <li>
+                                                <a href="./index.html">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="./about us.html">About</a>
+                                            </li>
 
-            } #contentside{
-                background:black !important;
-                
-            }
-            #content{
-                width:80%;
-                padding: 15px;
-                border: 1px solid black;
-                float: left;
-                box-sizing: border-box;
-                background:black;
-                color: grey;
-                text-shadow: 2px 2px 5px green;
-                line-height:30px;
-                text-align: justify;
-           
-           
+                                            <li>
+                                                <a href="./gallary.html">Gallery</a>
+                                            </li>
+                                            <li>
+                                                <a href="./contact us.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 d-none d-xl-block">
+                                <div class=" header-side">
+                                    <a class="button" href="tel:+916280669551">
+                                        Get any info
+                                        <span>
+                                            <i class="fal fa-long-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                    <p>
+                                        <b>
+                                            Call Now :
+                                            <a href="tel:+916280669551"> +916280669551 </a>
+                                        </b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-7 d-xl-none d-block">
+                                <div class="header-search-nav">
 
-            }
-            #sidebar{
-                border: 1px solid black;
-                background:black;
-                color:white;
-                 width:20%;
-                float: right;
-                box-sizing: border-box;
-                font-size: small;
-              
-              
-            } 
-            #owner{
-                color:gray;
-                text-align: center;
-                text-shadow: 2px 2px 5px red;
-                
-            }
-            @media only screen and (max-width:830px){
-              #content{
-                background: black;
-                width: 100%;
-                float:none;
-                display: block;
-                
-              }
-              #sidebar{
-                background: black;
-                width: 100%;
-                 float:none;
-                 text-align: justify;
-                 
-                 }
-              
-              #footer{
-                
-                clear: none;
-                padding-left:0px;
-               text-align:left;
-              }
-          }
-            #sidebar ul{
-               text-align:left;
-               display: inline-block;
-            }
+                                    <input type="checkbox" name="" id="check" class="d-none">
+                                    <label for="check">
+                                        <div class="header-nav">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </label>
+                                    <div class=" sider">
+                                        <div class="off-canvas">
+                                            <label for="check">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </label>
+                                            <div class="off-canvas-body">
 
-            #sidebar li{
-                
-                list-style: none;
-            }
-            #sidebar li a{
-                display: block;
-                padding: 10px 13px;
-                text-decoration:none;
-                color: grey;
-                text-shadow: 2px 2px 5px green;}
-            #sidebar li a:hover{
-                background:rgb(5, 120, 20);
-                color:white;
-            }
-            
-            #footer{
-                clear: both;
-                background:rgb(5, 120, 20) ;
-                padding: 5px 10px;
-                text-align: right;
-                
-            }
-        </style>
-  </head>
-    <body>
-       
-        <div id="wrapper">
-            <div id="header">
-             <img src="greenheart1.jpg" width="100% " height="100%">
-             
-                
-           
+                                                <div class=" sider-top">
+                                                    <div class=" sider-logo">
+                                                        <a href="\">
+                                                            <img class="img-logo-sidebar"
+                                                                src="./assets/images/greenheartlogo.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class=" sider-social">
+                                                        <span>
+                                                            <a href="tel:+916280669551" class="text-black"><i
+                                                                    class="fa-regular fa-phone"></i></a>
+
+                                                        </span>
+                                                        <span>
+
+                                                            <a href="mailto:grenheartorganics@gmail.com?cc=shivryat@gmail.com&subject=i have a query&body=hi shiv"
+                                                                class="text-black">
+                                                                <i class="fa-regular fa-envelope"></i></a>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="https://maps.app.goo.gl/2tS5ucFESRQMWutY9"
+                                                                class="text-black">
+                                                                <i class="fa-regular fa-location-dot"></i>
+                                                            </a>
+                                                        </span>
+                                                        <span>
+                                                            <a href="https://www.instagram.com/green_heart_organics?igsh=MW83dG5jdDVxdDdieg=="
+                                                                class="text-black">
+                                                                <i class="fab fa-instagram"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class=" sider-text">
+                                                        <p>
+                                                            <b>
+                                                                Call Now :
+                                                                <a href="tel:+916280669551"> +916280669551 </a>
+                                                            </b>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="sider-middle">
+                                                    <div class=" sider-bar">
+                                                        <nav class=" sider-nav">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="./index.html">HOME</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="./about us.html">ABOUT</a>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="./gallary.html">GALLERY</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="./contact us.html">CONTACT</a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                                <div class=" sider-bottom d-lg-block d-none">
+
+                                                    <div class=" sider-button">
+                                                        <button class="btn">
+                                                            <a href="tel:+916280669551" class="text-white">GET IN
+                                                                TOUCH</a>
+                                                            <span>
+                                                                <i class="fal fa-long-arrow-right"></i>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-                 <div id="menu">
-                    <ul>
-                       
-                        <li><a href="index.html" target="_blank"><i class="fa-solid fa-house"></i>
-                            home</a></li>
-                        <li><a href="about us.html" target="_blank"><i class="fa-solid fa-address-card"></i> about us</a></li>
-                        <li><a href="gallary.html" target="_blank"><i class="fa-solid fa-photo-film"></i>Gallery</a></li>
-                        <li><a href="contact us.html" target="_blank"><i class="fa-solid fa-phone-flip"></i>contact us</a></li>
+        </header>
+        <!-- -----------------------end of header---------------------- -->
+        <!-- --------------------section1----------------------- -->
+        <section>
+            <div class="hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="hero-section"><span class="hero-subtitle white-bg d-inline-block">Welcome To
+                                    <b class="text-black"> Green Heart Organics </b></span>
+                                <div class="intro">
+                                    <h1 class="hero-title"><span>At Green Heart Organics, we're passionate about
+                                            sustainable solutions, and vermicomposting with Eisenia fetida worms,
+                                            also known as red wigglers, is a favorite! The windrow method is ideal for
+                                            farms, gardens, and anyone wanting to
+                                            efficiently transform organic waste into nutrient-rich vermicompost, all on
+                                            a larger scale.</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="tilt-img">
+                                <div class="hero-img text-end "><img src="./assets/images/hero.jpg" alt="" />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------section2---------------------- -->
+            <div class="service-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section_title text-center ">
+                                <div class="tp-section"><span class="section__subtitle shadow-none p-0">Ready to get
+                                        your hands dirty?</span>
+                                    <h2 class="section__title">Let's get
+                                        <span>started!</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="da-service ">
+                                <div class="sevice2 d-flex justify-content-between align-items-center">
+                                    <h3 class="service__title ">Gather your tools:</h3>
+                                    <div class="service__counter">01</div>
+                                </div>
+                                <div class="service__list-box bg-white">
+                                    <p>Open Area: Find a well-ventilated, protected spot outdoors, like a shaded garden
+                                        corner or covered concrete pad.
+                                        Bedding Materials:Get coarse materials like shredded leaves, cardboard, and
+                                        straw - your wiggly friends adore a cozy
+                                        home! Aim for a pile 4-6 feet wide and 3-4 feet tall.
+                                        Organic Waste: Diversify your worms' menu with food scraps, yard waste, and even
+                                        manure (avoid meat, dairy, and oily
+                                        foods).
+                                        Red Wigglers: Purchase these happy composters from trusted worm suppliers. Start
+                                        with about 1 pound per square meter of
+                                        windrow space.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="da-service">
+                                <div class=" sevice2 d-flex justify-content-between align-items-center">
+                                    <h3 class="service__title ">Building your Windrow:</h3>
+                                    <div class="service__counter">02</div>
+                                </div>
+                                <div class="service__list-box bg-white">
+                                    <p>Lay the foundation:Block out unwanted guests with weed barrier mesh to protect
+                                        your precious ecosystem.
+                                        Bedding bonanza: Pile up your chosen bedding materials, gently moistening them
+                                        as you go.
+                                        Wiggle welcome:Scatter your red wigglers evenly over the damp bedding.
+                                        Food fiesta:Start light with food scraps and yard waste, burying them under the
+                                        bedding for a delightful surprise.
+                                        Monitoring your masterpiece:Keep things pleasantly moist, not soggy. Every 1-2
+                                        weeks, give the pile a good turn,
+                                        ensuring air circulation and even distribution of worms and food.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="da-service">
+                                <div class="sevice2 d-flex justify-content-between align-items-center">
+                                    <h3 class="service__title">Harvesting your Green Gold: </h3>
+                                    <div class="service__counter">03</div>
+                                </div>
+                                <div class="service__list-box bg-white">
+                                    <p>After 3-6 months, your windrow will be transformed! Dark, crumbly, and
+                                        earthy-smelling compost awaits.
+                                        Harvest from the edges, leaving the active composting zone undisturbed.
+                                        Scoop up your bounty and apply it directly to your garden or potting soil -
+                                        happy plants guaranteed! </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="da-service">
+                                <div class="sevice2 d-flex justify-content-between align-items-center">
+                                    <h3 class="service__title ">Why choose the Windrow Method?</h3>
+                                    <div class="service__counter">04</div>
+                                </div>
+                                <div class="service__list-box bg-white">
+                                    <p>Waste warriors:Large windrows handle big volumes of organic waste, making them
+                                        perfect for large-scale operations.
+                                        Low-maintenance heroes: Once set up, windrows require minimal upkeep, just
+                                        regular turning and moisture checks.
+                                        Budget-friendly champions: Compared to other methods, windrows are
+                                        cost-effective and easy to maintain.
+                                        Nutrient-rich champions:The finished vermicompost is packed with nutrients and
+                                        beneficial microbes, giving your plants
+                                        the ultimate boost.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="da-service">
+                                <div class="sevice2 d-flex justify-content-between align-items-center">
+                                    <h3 class="service__title ">Green Heart Organics' Top Tips:</h3>
+                                    <div class="service__counter">05</div>
+                                </div>
+                                <div class="service__list-box bg-white">
+                                    <p>Shade seekers:During hot weather or heavy rain, cover your windrow with shade
+                                        cloth or burlap to keep temperatures and
+                                        moisture stable.
+                                        Worm watch:See fewer worms or slow decomposition? Adjust your feeding habits or
+                                        moisture levels.
+                                        Layered approach:Add new food scraps in thin layers, preventing overwhelm for
+                                        your hardworking crew.
+                                        Patience is key:Don't rush! Vermicomposting takes time. Let your windrow work
+                                        its magic and reap the rewards.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="da-service">
+                                <div class="sevice2 d-flex justify-content-between align-items-center">
+                                    <h3 class="service__title ">Visit our website</h3>
+                                    <div class="service__counter">06</div>
+                                </div>
+                                <div class="service__list-box bg-white">
+                                    <p>With Green Heart Organics and the windrow method, you can turn waste into
+                                        valuable fertilizer, one wriggling friend at a
+                                        time! So grab your red wigglers, gather your organic materials, and let's
+                                        compost our way to a greener future!
+                                        Visit our website for more tips, tricks, and resources on all things
+                                        vermicomposting! and Contact Us any time </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
+            </div>
+            <!-- -------------------------section3----------------------- -->
+            <div class="blog-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 text-center">
+                            <div class="section-title">
+                                <div class="tp-section">
+                                    <h2 class="section__title">Our
+                                     <span>
+                                            services</span></h2>
+                                </div>
+                            </div>
+                        </div>
                         
-                    </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="blog ">
+                                <div class="blog__thumb w-img">
+                                    <div class="fix"><a name="vermicompost"> <img
+                                                src="./assets/images/vermi.jpg" alt="[object Object]" /></a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="blog-info bg-white">
+                                    <div class="blog-inner">
+                                        
+                                        <h3 class="blog__title"><a name="vermicompost">Vermicompost</a></h3>
+                                        <p class="m-0">Vermicompost is the product of the decomposition process using various species of worms, usually red
+                                        wigglers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="blog">
+                                <div class="blog__thumb w-img">
+                                    <div class="fix"><a name="vermiwash"> <img src="./assets/images/vermiwash.webp"
+                                                alt="[object Object]" /></a>
+                                    </div>
+                                   
+                                </div>
+                                <div class="blog-info bg-white">
+                                    <div class="blog-inner">
+                                    
+                                        <h3 class="blog__title"><a name="vermiwash">Vermiwash</a></h3>
+                                        <p class="m-0">Vermiwash is a liquid extract produced from vermicompost in a medium where earthworms are richly populated.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="blog">
+                                <div class="blog__thumb w-img">
+                                    <div class="fix"><a name="earthworms"> <img src="./assets/images/earthworms.jpg"
+                                                alt="[object Object]" /></a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="blog-info bg-white">
+                                    <div class="blog-inner">
+                                        
+                                        <h3 class="blog__title"><a name="earthworms">Earth worms or Red Wigglers</a></h3>
+                                        <p class="m-0">Purchase these happy composters from us. Start with about 1 pound per square meter of windrow space.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------------section4---------------------------- -->
+            <div class="testinomial bg-black section-9">
+                <div class="container">
+                    <div class="row align-items-cenrer">
+                        <div class="col-12">
+                            <div class="section-title text-center">
+                                <div class="section-sub-title">
+                                    <span>Great Reviews</span>
+                                </div>
+                                <div class="title text-white">
+                                    <h2 class="section__title">What Our <span>Clients Say?</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 position-relative">
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-10 col-12 text-white">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-3">
+                                                        <div class="testinomial-img position-relative">
+                                                            <img src="./assets/images/user.png" alt="">
+                                                            <div class="testinomial-icon">
+                                                                <i class="fas fa-quote-left"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-9">
+                                                        <div class="testinomial-right">
+                                                            <span class="testinomial-rating d-inline-block">
+                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                                    class="fas fa-star"></i></span>
+                                                            <p class="testinomial-review">
+                                                                “Great quality compost, surprisingly cheap! My plants love it and it's all natural, no fertilizers needed!.I'm really impressed with their work.”
+                                                            </p>
+                                                            <div class="testinomial-name">
+                                                                <h3 class="testinomial-reviewer-name">
+                                                                    Nikhil Kumar
+                                                                </h3>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-10 col-12 text-white">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-3">
+                                                        <div class="testinomial-img position-relative">
+                                                            <img src="./assets/images/user.png" alt="">
+                                                            <div class="testinomial-icon">
+                                                                <i class="fas fa-quote-left"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-9">
+                                                        <div class="testinomial-right">
+                                                            <span class="testinomial-rating d-inline-block">
+                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                                    class="fas fa-star"></i></span>
+                                                            <p class="testinomial-review">
+                                                                “If you're looking for high-quality vermicompost to take your garden to the next level,look no furthur than Green Heart Organics. I highly recommend them.”
+                                                            </p>
+                                                            <div class="testinomial-name">
+                                                                <h3 class="testinomial-reviewer-name">
+                                                                    Arshdeep Bansal
+                                                                </h3>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-10 col-12 text-white">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-3">
+                                                        <div class="testinomial-img position-relative">
+                                                            <img src="./assets/images/user.png" alt="">
+                                                            <div class="testinomial-icon">
+                                                                <i class="fas fa-quote-left"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-9">
+                                                        <div class="testinomial-right">
+                                                            <span class="testinomial-rating d-inline-block">
+                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                                    class="fas fa-star"></i></span>
+                                                            <p class="testinomial-review">
+                                                                “Improves roots and plant growth..
+                                                                Very good quality manure for the home gardening and must be used to make the plants grow healthy. Try it!!”
+                                                            </p>
+                                                            <div class="testinomial-name">
+                                                                <h3 class="testinomial-reviewer-name">
+                                                                    Jaspreet Kaur
+                                                                </h3>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-10 col-12 text-white">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-3">
+                                                        <div class="testinomial-img position-relative">
+                                                            <img src="./assets/images/user.png" alt="">
+                                                            <div class="testinomial-icon">
+                                                                <i class="fas fa-quote-left"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-9">
+                                                        <div class="testinomial-right">
+                                                            <span class="testinomial-rating d-inline-block">
+                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                                    class="fas fa-star"></i></span>
+                                                            <p class="testinomial-review">
+                                                                “I was skeptical at first – premium quality vermicompost at the lowest price? But [Green Heart Organics ] really
+                                                                delivered! The compost is top-notch. Rich, dark, and crumbly, it's clear they take pride in their product.”
+                                                            </p>
+                                                            <div class="testinomial-name">
+                                                                <h3 class="testinomial-reviewer-name">
+                                                                    Ramandeep Kaur
+                                                                </h3>
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-10 col-12 text-white">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-3">
+                                                        <div class="testinomial-img position-relative">
+                                                            <img src="./assets/images/user.png" alt="">
+                                                            <div class="testinomial-icon">
+                                                                <i class="fas fa-quote-left"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-9">
+                                                        <div class="testinomial-right">
+                                                            <span class="testinomial-rating d-inline-block">
+                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                                    class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                                            <p class="testinomial-review">
+                                                                “I recently purchased vermicompost from Green Heart Organics. The team is knowledgeable and passionate about their work,
+                                                                providing top-quality compost that has made a noticeable difference in my garden. My plants are thriving like never
+                                                                before! Excellent customer service and a seamless experience from start to finish. Highly recommend Green Heart Organics
+                                                                for all your vermicomposting needs.”
+                                                            </p>
+                                                            <div class="testinomial-name">
+                                                                <h3 class="testinomial-reviewer-name">
+                                                                    Amarjyoti
+                                                                </h3>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev d-md-block d-none" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next d-md-block d-none" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -----------------------section5-------------------- -->
+            <div class="section-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-10-upper text-center">
+                                <span class="section-10-subtitle">
+                                    LET'S GET TO KNOW YOU
+                                </span>
+                                <div>
+                                    <h3 class="section-10-title">
+                                        <span>
+                                            Find out what makes Green Heart 
+                                            <br>
+                                            Organics different. Let’s Chat!
+                                        </span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="section-10-btns text-center">
+                            <a href="tel:6280669551" class="schedule-btn">
+                                Schedule a meeting
+                                <span>
+                                    <i class="fal fa-long-arrow-right"></i>
+                                </span>
+                            </a>
+                            <a href="tel:6280669551" class="white-btn">
+                                <span>
+                                    <i class="fas fa-phone"></i>
+                                </span>
+                                +91 6280669551
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumb-animation d-none d-lg-block">
+                    <div class="like-thumb">
+                        <img src="./assets/images/thumb.jpg" alt="">
+                    </div>
+                    <div class="like-thumb-border"></div>
+                </div>
+            </div>
+            <!-- -----------------------section6------------------------ -->
            
-                 </div>
-                 <div id="contentside">
-                    <div id="content">
-                       <p>At Green Heart Organics, we're passionate about sustainable solutions, and vermicomposting with Eisenia fetida worms, also known as red wigglers, is a favorite! The windrow method is ideal for farms, gardens, and anyone wanting to efficiently transform organic waste into nutrient-rich vermicompost, all on a larger scale. </p>
-           <p>Ready to get your hands dirty? Let's get started!
-            <br> Gather your tools:            <br>
-            
-            Open Area: Find a well-ventilated, protected spot outdoors, like a shaded garden corner or covered concrete pad.            <br>
-            Bedding Materials:Get coarse materials like shredded leaves, cardboard, and straw - your wiggly friends adore a cozy home! Aim for a pile 4-6 feet wide and 3-4 feet tall.            <br>
-            Organic Waste: Diversify your worms' menu with food scraps, yard waste, and even manure (avoid meat, dairy, and oily foods).            <br>
-            Red Wigglers: Purchase these happy composters from trusted worm suppliers. Start with about 1 pound per square meter of windrow space.            <br>
-            </p>
-            <p>Building your Windrow:            <br>
-
-                1. Lay the foundation:Block out unwanted guests with weed barrier mesh to protect your precious ecosystem.            <br>
-                2. Bedding bonanza: Pile up your chosen bedding materials, gently moistening them as you go.            <br>
-                3. Wiggle welcome:Scatter your red wigglers evenly over the damp bedding.            <br>
-                4. Food fiesta:Start light with food scraps and yard waste, burying them under the bedding for a delightful surprise.            <br>
-                5. Monitoring your masterpiece:Keep things pleasantly moist, not soggy. Every 1-2 weeks, give the pile a good turn, ensuring air circulation and even distribution of worms and food.            <br>
-                
-                </p><p>Harvesting your Green Gold:            <br>
-
-                     After 3-6 months, your windrow will be transformed! Dark, crumbly, and earthy-smelling compost awaits.            <br>
-                     Harvest from the edges, leaving the active composting zone undisturbed.            <br>
-                     Scoop up your bounty and apply it directly to your garden or potting soil - happy plants guaranteed!            <br>
-                    </p>
-                    <p>Why choose the Windrow Method?
-                        <br>
-                        Waste warriors:Large windrows handle big volumes of organic waste, making them perfect for large-scale operations.            <br>
-                        Low-maintenance heroes: Once set up, windrows require minimal upkeep, just regular turning and moisture checks.            <br>
-                        Budget-friendly champions: Compared to other methods, windrows are cost-effective and easy to maintain.            <br>
-                        Nutrient-rich champions:The finished vermicompost is packed with nutrients and beneficial microbes, giving your plants the ultimate boost.            <br>
-                        </p>
-                        <p>Green Heart Organics' Top Tips:            <br>
-
-                            Shade seekers:During hot weather or heavy rain, cover your windrow with shade cloth or burlap to keep temperatures and moisture stable.            <br>
-                            Worm watch:See fewer worms or slow decomposition? Adjust your feeding habits or moisture levels.            <br>
-                            Layered approach:Add new food scraps in thin layers, preventing overwhelm for your hardworking crew.            <br>
-                            Patience is key:Don't rush! Vermicomposting takes time. Let your windrow work its magic and reap the rewards.            <br>
+            <div class="section-7">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="section-7-left">
+                                <div class="section-title">
+                                    <div class="tp-section">
+                                        <h2 class="section__title">Let’s get ready to join us. Connect
+                                            with Us.</h2>
+                                    </div>
+                                </div>
+                                <div class="section-7-info">
+                                    <span>
+                                        <i class="fas fa-phone"></i>
+                                        <a href="tel: +91 6280669551">+91 6280669551</a>
+                                    </span>
+                                    <span>
+                                        <i class="fas fa-envelope-open"></i>
+                                        <a href="mailto:grenheartorganics@gmail.com">grenheartorganics@gmail.com</a>
+                                    </span>
+                                    <span>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Village kot, Near Barapur Adda,District Hoshiarpur, Punjab
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="section-7-right"><img src="./assets/images/vermicompost.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- -----------------------footer----------------------- -->
+<footer  class="footer">
+    
+        <div class="container">
+            <div class="footer-main">
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="footer-heading">
+                            <h3 class="footer-title">Get In Touch</h3>
+                            <div class="footer-sub d-flex align-items-center"><span class="call-icon"><i
+                                        class="fas fa-phone"></i></span><span><span class="d-block">Call
+                                        Now</span><b><a class="acolor" href="tel:+916280669551">+91
+                                            6280669551</a></b></span></div>
+                            <div class="footer-sub d-flex align-items-center"><span class="call-icon"><i
+                                        class="fas fa-envelope-open"></i></span><span><span class="d-block">Email
+                                        Address</span><b><a class="acolor"
+                                            href="mailto:grenheartorganics@gmail.com?cc=shivryat@gmail.com&subject=i have a query&body=hi shiv">grenheartorganics@gmail.com</a></b></span>
+                            </div>
+                            <div class="footer-sub d-flex align-items-center"><span class="call-icon"><i
+                                        class="fas fa-location-check"></i></span><span><span class="d-block">
+                                        Address</span><b><a class="acolor"
+                                            href="https://maps.app.goo.gl/2tS5ucFESRQMWutY9">
+                                            Village kot, Near Barapur Adda,District Hoshiarpur, Punjab</a></b></span>
+                            </div>
                             
-                            </p>
-                            <p>With Green Heart Organics and the windrow method, you can turn waste into valuable fertilizer, one wriggling friend at a time! So grab your red wigglers, gather your organic materials, and let's compost our way to a greener future!</p>            <br>
-                     <p>Visit our website for more tips, tricks, and resources on all things vermicomposting! and Contact Us any time</p>
-                        </div> 
-                        <div id="sidebar">
-                 <div id="owner"><img src="shiv.jpg" width="100%" height="100%"/>
-                <h3>Founder and CEO of Green Heart Organics </h3>
-            <h2>Mr.shiv kumar</h2></div>
-                 <ul>
-                       
-                    <li><a href="index.html" target="_blank"><i class="fa-solid fa-house"> </i>&nbsp;home</a></li>
-                    <li><a href="about us.html" target="_blank"><i class="fa-solid fa-address-card"></i>&nbsp;about us</a></li>
-                    <li><a href="gallary.html" target="_blank"><i class="fa-solid fa-photo-film"></i>&nbsp;gallery</a></li>
-                    <li><a href="contact us.html" target="_blank"><i class="fa-solid fa-phone-flip"></i>&nbsp;contact us</a></li>
-                    
-                </ul>
-                         </div></div>
-                             
+                          
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6">
+                        <div class="footer-heading ">
+                            <h3 class="footer-title">Quick Links</h3>
+                            <ul id="company">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about us.html">About</a></li>
+                                <li><a href="./contact us.html">Contact</a></li>
+                                <li><a href="./gallary.html">Gallery</a></li>
+                               
+                            </ul>
+                            <div class="social-icons"><b style="font-size: 14px;"> Connect Here:</b>
+                                <br> <br><span>
+                                <a href="tel:+916280669551" class="text-black"><i class="fa-regular fa-phone"></i></a>
+                            
+                            </span>
+                            <span>
+                            
+                                <a href="mailto:grenheartorganics@gmail.com?cc=shivryat@gmail.com&subject=i have a query&body=hi shiv"
+                                    class="text-black">
+                                    <i class="fa-regular fa-envelope"></i></a>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://maps.app.goo.gl/2tS5ucFESRQMWutY9" class="text-black">
+                                    <i class="fa-regular fa-location-dot"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://www.instagram.com/green_heart_organics?igsh=MW83dG5jdDVxdDdieg==" class="text-black">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </span></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="footer-heading">
+                            <h3 class="footer-title">Services</h3>
+                            <ul id="company">
+                                <li><a href="#vermiwash">Vermiwash</a></li>
+                                <li><a href="#vermicompost">Vermicompost</a></li>
+                                <li><a href="#earthworms">Earth worms</a></li>
+                               
+                            </ul>
+                                                            <div class="footer-btn">
+                                                                <a class="button" href="tel:+916280669551">
+                                                                    Get any info
+                                                                    <span>
+                                                                        <i class="fal fa-long-arrow-right"></i>
+                                                                    </span>
+                                                                </a>
+                                                                <p>
+                                                                    <b>
+                                                                        Call Now :
+                                                                        <a href="tel:+916280669551"> +916280669551 </a>
+                                                                    </b>
+                                                                </p>
+                                                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="footer-heading ">
+                            <h3 class="footer-title">Green Heart Organics</h3>
+                            <div class="contact-map position-relative">
+                                <div><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.5347802374595!2d76.2167639758775!3d31.26129957433368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ac7776091828f%3A0x76f747a8c37682ec!2sGreen%20Heart%20Organics%20(Vermicompost)!5e0!3m2!1sen!2sin!4v1718083544458!5m2!1sen!2sin"
+                                    style="border:0;" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="copyright-text "><span>© Copyright 2023 – 2024 |<strong>
+                                    Green Heart Organics </strong> | All rights reserved.</span></div>
+                    </div>
+                
+                </div>
+            </div>
         </div>
-        <div id="footer">
-            &copy;greenheartorganics 2023
+    
+</footer>
+<script src="./assets/js/bootstrap.min.js"></script>
+</body>
 
-        </div>
-    </body>
 </html>
